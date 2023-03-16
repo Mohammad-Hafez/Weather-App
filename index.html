@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="website icon" type="png" href="images/sun.png">
+</head>
+
+<body>
+    <nav class="p-5 ">
+        <div class="container px-5 d-flex align-items-center justify-content-around">
+            <div class="logo d-flex align-items-center justify-content-center p-4 w-50 ">
+                <div class="logoImg me-4 w-25 ">
+                    <img src="images/logo@2x.png" class="img-fluid" alt="">
+                </div>
+                <div class="logoText w-50">
+                    <p class="mb-2">
+                        weather
+                    </p>
+                    <p class="m-0">
+                        tagline goes here
+                    </p>
+                </div>
+            </div>
+            <div class="navLinks w-50 d-flex align-items-center justify-content-center list-unstyled">
+                <li>
+                    <a class="btn mx-3 active" href="index.html" id="homeBtn"> home</a>
+                </li>
+                <li>
+                    <a class="btn" href="contact.html" id="contactBtn"> contact</a>
+                </li>
+                
+            </div>
+        </div>
+    </nav>
+    <section class="p-5" id="content">
+        <div class="container position-relative">
+            <div class="location w-75 mx-auto position-relative mb-5">
+                <input id="country" type="text" class="form-control p-3" placeholder="find your location">
+                <button id="findBtn">
+                    Find
+                </button>
+            </div>
+            <div class="weatherContainer w-75 mx-auto rounded">
+                <div class="row m-0">
+                    <div class="col-lg-4 px-0" id="firstDay">
+                        <div
+                            class="innerHeader rounded-top rounded-end-0 d-flex align-items-center justify-content-between p-3">
+                            <p class="m-0" id="firstDayName"></p>
+                            <p class="m-0" id="firstDayDate"></p>
+                        </div>
+                        <div class="innerContent p-3">
+                            <h4 id="userCountryResult"></h4>
+                            <h1 class="d-flex align-items-center">
+                                <span class="me-3 w-75" id="firstDayTemp"></span>
+                                <img src="" id="firstDaySkyImg" class="img-fluid w-25" alt="">
+                            </h1>
+                            <span id="firstSunstatus"></span>
+                        </div>
+                        <div
+                            class="innerFooter rounded-bottom rounded-end-0 d-flex align-items-center justify-content-start  p-3">
+                            <p data-bs-toggle="tooltip" data-bs-title="humidity"
+                                class="m-0 me-4 d-flex align-items-center"><img src="images/icon-umberella.png"
+                                    class="me-2" alt=""><span id="humidityPercentage">20%</span></p>
+                            <p class="m-0 me-4 d-flex align-items-center"><img src="images/icon-wind.png" class="me-2"
+                                    alt=""> <span id="widnSpeed"></span></p>
+                            <p class="m-0 d-flex align-items-center"><img src="images/icon-compass.png" class="me-2"
+                                    alt=""> <span id="windDirection"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-center" id="secondDay">
+                        <div class="innerHeader p-3">
+                            <p class="m-0" id="secondDayName"></p>
+                        </div>
+                        <div class="innerContent p-3">
+                            <img src="" class="img-fluid w-25 mb-3" id="secondDayImg" alt="">
+                            <h3 class="mb-2" id="secondDayMaxTemp"></h3>
+                            <h5 id="secondDayMinTemp"></h5>
+                            <span id="secondSunstatus"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-center" id="thirdDay">
+                        <div class="innerHeader rounded-top rounded-start-0 p-3">
+                            <p class="m-0" id="thirdDayName"></p>
+                        </div>
+                        <div class="innerContent p-3">
+                            <img src="" class="img-fluid w-25 mb-3" alt="" id="thirdDayImg">
+                            <h3 class="mb-2" id="thirdDayMaxTemp">
+
+                            </h3>
+                            <h5 id="thirdDayMinTemp">
+
+                            </h5>
+                            <span id="thirdSunstatus">
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="p-5">
+        <div class="container">
+            <div class="footerContent w-75 mx-auto">
+                <div class="row mb-3">
+                    <div class="col-md-6  position-relative p-0">
+                        <input type="email" class="form-control p-3 m-0" placeholder="Enter your Email to subscribe...">
+                        <button type="submit">
+                            Send
+                        </button>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="iconsContainer d-flex justify-content-center align-items-center pt-2">
+                            <i class="fa-brands fa-facebook-f me-2"></i>
+                            <i class="fa-brands fa-twitter me-2"></i>
+                            <i class="fa-brands fa-google-plus-g me-2"></i>
+                            <i class="fa-brands fa-pinterest me-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    Copyright &#169; 2014 Company name. Designed by Themezy. All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
+
+
+</html>
